@@ -21,5 +21,5 @@ module.exports = server => {
   server.use(express.json());
   server.use(cors());
   server.use(session(sessionConfig));
-  // server.use(logger);
+  server.use(logger);
 };
